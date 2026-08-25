@@ -1,0 +1,115 @@
+<!--Create an interactive video game catalog that incorporates ALL the elements you have learned. It must include:
+
+A main heading (h1) with the name of the game store or platform
+At least 1 featured image (using a placeholder or a real URL)
+At least 3 links: 2 external (to platforms like Steam, Epic Games, etc.) and 1 internal (anchor link)
+A comparison table for 3 video games (with columns: Title, Genre, Price, Platform)
+A "Reserve a Game" form with the following fields: name, email, favorite game, preferred platform
+At least 2 paragraphs of content about gaming-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameStop</title>
+</head>
+<body>
+    
+    <!--A main heading (h1) with the name of the game store or platform-->
+    <h1>GameStop</h1>
+
+    <!--At least 1 featured image (using a placeholder or a real URL)-->
+    <img src="https://1000logos.net/wp-content/uploads/2022/10/GameStop-logo.png" alt="GameStop Logo" height="300" width="500">
+
+    <br>
+
+
+    <!--At least 3 links: 2 external (to platforms like Steam, Epic Games, etc.) and 1 internal (anchor link)-->
+    <a href="https://store.steampowered.com" target="_blank">Steam Store</a>
+    <a href="https://store.epicgames.com" target="_blank">Epic Games Store</a>
+    <a href="https://www.ea.com" target="_self">EA Game Store</a>
+
+    <br>
+
+    <!--A comparison table for 3 video games (with columns: Title, Genre, Price, Platform)-->
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="4">COMPARISONS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Title</th>
+                <th>Genre</th>
+                <th>Price</th>
+                <th>Platform</th>
+            </tr>
+            <tr>
+                <td>The Last Of Us</td>
+                <td>Survival</td>
+                <td>$59.99</td>
+                <td>Steam / PS5</td>
+            </tr>
+            <tr>
+                <td>Cyberpunk 2077</td>
+                <td>Action</td>
+                <td>$59.99</td>
+                <td>Steam / PS5 / Xbox</td>
+            </tr>
+            <tr>
+                <td>Until Then</td>
+                <td>Visual Novel</td>
+                <td>$15</td>
+                <td>Steam</td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+    <!--A "Reserve a Game" form with the following fields: name, email, favorite game, preferred platform-->
+    <div id="Contact">
+        
+        <h2>Contact</h2>
+
+        <form method="post", action="mailto:wfakename@gmail.com&subject=Contact">
+
+            <label for="name">Name</label>
+            <input type="text", name="name", id="name">
+
+            <br>
+
+            <label for="email">E-mail</label>
+            <input type="text", name="email", id="email">
+
+            <br>
+
+            <label for="game">Favorite Game</label>
+            <br>
+            <textarea name="game", id="game", rows="5", cols="40"></textarea>
+
+            <br>
+
+            <label for="preferred">Preferred Platform</label>
+            <select name="preferred", id="preferred">
+                <option value="Steam">Steam</option>
+                <option value="Epic Games">Epic Games</option>
+                <option value="EA">EA</option>
+            </select>
+
+        </form>
+    </div>
+
+    <!--At least 2 paragraphs of content about gaming-->
+        <p>Video games are interactive electronic media where players control characters or actions on a screen.
+             They have grown from simple lab experiments in the mid-20th century into a massive global entertainment industry. 
+             People play them on many different devices like home consoles, personal computers, and smartphones. 
+             Today, gaming includes a wide variety of genres, from fast-paced action titles to quiet puzzle games.
+             Unlike passive media like books or movies, video games give players direct agency to make choices and solve problems. 
+             This active participation can help build hand-eye coordination, quick thinking, and problem-solving skills. 
+             Furthermore, modern multiplayer online features turn gaming into a shared social space where friends connect and build 
+             communities.</p>
+
+</body>
+</html>
